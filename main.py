@@ -33,3 +33,28 @@ print(str2.split("'"))
 print(str2.find("좋"))
 print(str2.index("리"))
 # find와 index의 차이는 찾고자 하는 문자가 "없을 때"
+
+# 리스트 (내장함수)
+li = [3,1,'배가',4,'고파요',5,1,2,2,1]
+print(li[0:3])
+
+# 리스트의 길이를 구하는 함수 : len()
+print("리스트의 길이 : ")
+print(len(li))
+
+# 리스트 원소 오름차순 정렬해주는 함수 : .sort()
+# sort()는 정렬된 리스트를 반환하지 않음
+li_2 = [3,1,4,5,2]
+print("정렬하기 전")
+print(li_2)
+print("정렬하고 난 후")
+li_2.sort()
+print(li_2)
+
+# 리스트 내의 특정 원소 인덱스 반환해주는 함수 .index()
+print("반환 된 인덱스")
+print(li.index("배가"))
+
+# 리스트 내의 특정 원소의 갯수 세기 : .count(요소)
+print("2가 몇번 등장?")
+print(li.count(2))
