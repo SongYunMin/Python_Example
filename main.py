@@ -58,3 +58,35 @@ print(li.index("배가"))
 # 리스트 내의 특정 원소의 갯수 세기 : .count(요소)
 print("2가 몇번 등장?")
 print(li.count(2))
+
+#딕셔너리 (내장함수)
+pairs = {'잔나비' : '뜨거운 여름밤', '소히' : '산책', '홍크':'어쩌면'}
+
+# 하나의 키 -Value 쌍을 추가하는 방법
+# 딕셔너리형 변수 [키] = value
+print(pairs)
+pairs['스탠딩에그'] = '휴식'
+print(pairs)
+# 특정 Key - Value 삭제하는 방법 : del 함수
+# del 변수[key]
+del pairs['스탠딩에그']
+print(pairs)
+
+# key로 value얻기 : 변수.get(키)
+
+print(pairs.get('잔나비'))
+
+# 제어문 - 분기문
+# score = int(input("점수 입력 : "))
+# if(score>=85):
+#     print("PASS")
+# else :
+#     print("FAIL")
+
+# 예제 - 2
+
+activity = input("너 동아리 뭐해? : ")
+if(activity == "멋쟁이사자처럼"):
+    print("어 너도 멋사야?")
+else :
+    print("..그래..")
